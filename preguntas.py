@@ -48,8 +48,7 @@ def pregunta_03():
     Name: _c1, dtype: int64
 
     """
-    salida = pd.value_counts(tbl0['_c1']).sort_values()
-    return salida
+    return tbl0['_c1'].value_counts().sort_index()
 
 def pregunta_04():
     """
