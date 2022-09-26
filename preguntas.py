@@ -48,7 +48,8 @@ def pregunta_03():
     Name: _c1, dtype: int64
 
     """
-    return pd.value_counts(tbl0['_c1']).sort_values()
+    salida = pd.value_counts(tbl0['_c1']).sort_values()
+    return salida
 
 def pregunta_04():
     """
@@ -91,7 +92,8 @@ def pregunta_06():
     ['A', 'B', 'C', 'D', 'E', 'F', 'G']
 
     """
-    return tbl1['_c4'].str.upper().sort_values().unique()
+    salida = list(tbl1['_c4'].str.upper().sort_values().unique())
+    return salida
 
 def pregunta_07():
     """
